@@ -27,8 +27,8 @@ def transform_text(text):
     return " ".join(y)
 
 
-tfidf = pickle.load(open('vectorizer.pkl','rb'))
-model = pickle.load(open('model.pkl','rb'))
+tfidf = pickle.load(open('models/vectorizer.pkl','rb'))
+model = pickle.load(open('models/model.pkl','rb'))
 st.image('static\img\logo 2.png', output_format='PNG', width=100 )
 st.title("Spam Detectitive - Trustworthy Spam Classifier")
 
