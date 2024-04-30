@@ -7,6 +7,14 @@ from nltk.corpus import stopwords
 import string
 from nltk.stem.porter import PorterStemmer
 
+import os
+import subprocess
+
+# Check if NLTK data has been downloaded
+if not os.path.isdir("nltk_data"):
+    # Run setup.sh script to set up NLTK and download data
+    subprocess.call("./setup.sh", shell=True)
+
 ps= PorterStemmer()
 def transform_text(text):
     text=text.lower()
