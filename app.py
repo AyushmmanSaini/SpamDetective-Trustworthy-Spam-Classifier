@@ -10,10 +10,15 @@ from nltk.stem.porter import PorterStemmer
 import os
 import subprocess
 
-# Check if NLTK data has been downloaded
-if not os.path.isdir("nltk_data"):
-    # Run setup.sh script to set up NLTK and download data
+
+
+if not os.path.exists("subprocess_ran.flag"):
+    # Run the subprocess
     subprocess.call("./setup.sh", shell=True)
+    
+    # Create the flag file to indicate that the subprocess has been run
+    with open("subprocess_ran.flag", "w") as flag_file:
+        pass
 
 ps= PorterStemmer()
 def transform_text(text):
