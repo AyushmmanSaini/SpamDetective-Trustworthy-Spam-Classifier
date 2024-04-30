@@ -7,7 +7,7 @@ export NLTK_DATA="${PWD}/nltk_data"
 pip install nltk
 
 # Download NLTK data
-python -m nltk.downloader -d "${NLTK_DATA}" punkt stopwords
+python -m nltk.downloader punkt stopwords
 
 # Create Streamlit config file
 mkdir -p ~/.streamlit/
