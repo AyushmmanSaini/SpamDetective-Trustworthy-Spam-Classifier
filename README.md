@@ -95,4 +95,4 @@ Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
 
 ## Author
 
-* **Your Name** - *Data Scientist* - [Your GitHub Profile](https://github.com/your-username)
+* **Ayushman Saini** - *Data Scientist* - [Your GitHub Profile](https://github.com/your-username)
